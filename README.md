@@ -2,7 +2,11 @@
 
 Hecho de :fa-heart: para todos los amantes del código y de la serie animada Rick and Morty con HTML, CSS y JavaScript. Desarrollado con la API de la página oficial de Rick and Morty: https://rickandmortyapi.com/api/character/. Esperando y sea del agrado de quién se toma el tiempo de leer esto.
 
-#<center>[:fa-facebook-square:](http://facebook.com/JhonRomero26/)  [:fa-twitter-square:](https://twitter.com/JRomeroGonzaga)  [:fa-linkedin-square:](https://www.linkedin.com/in/romero-jhon/)  [:fa-instagram:](https://www.instagram.com/romero__jhon/ )  [:fa-spotify:](https://open.spotify.com/playlist/7yeOSHlnvay6ZNPINZmjby?si=M7YkqV2rQNCkaiW1lmZvUQ)</center>
+* [Facebook](http://facebook.com/JhonRomero26/) 
+* [Twitter](https://twitter.com/JRomeroGonzaga) 
+* [Linkedin](https://www.linkedin.com/in/romero-jhon/)
+* [Instagram](https://www.instagram.com/romero__jhon/ )
+* [Mi playlist en Spotify](https://open.spotify.com/playlist/7yeOSHlnvay6ZNPINZmjby?si=M7YkqV2rQNCkaiW1lmZvUQ)
 
 Página Online: https://jromerogonzaga.github.io/rick-and-morty/
 
