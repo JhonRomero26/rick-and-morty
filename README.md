@@ -1,6 +1,6 @@
 # Rick and Morty API
 
-Hecho de :fa-heart: para todos los amantes del código y de la serie animada Rick and Morty con HTML, CSS y JavaScript. Desarrollado con la API de la página oficial de Rick and Morty: https://rickandmortyapi.com/api/character/. Esperando y sea del agrado de quién se toma el tiempo de leer esto.
+Hecho de corazón para todos los amantes del código y de la serie animada Rick and Morty con HTML, CSS y JavaScript. Desarrollado con la API de la página oficial de Rick and Morty: https://rickandmortyapi.com/api/character/. Esperando y sea del agrado de quién se toma el tiempo de leer esto.
 
 * [Facebook](http://facebook.com/JhonRomero26/) 
 * [Twitter](https://twitter.com/JRomeroGonzaga) 
