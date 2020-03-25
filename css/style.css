@@ -1,0 +1,162 @@
+html,
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  background-color: #1f1f1f;
+}
+
+body::-webkit-scrollbar {
+  background-color: #282828;
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1f1f1f;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1100px;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.parallax {
+  font-size: 1rem;
+  background-position: 50% 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  position: relative;
+  color: #fff;
+}
+
+.paralax::after {
+  content: "Hola";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(#000, 0.25);
+  z-index: 1;
+}
+
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #282828;
+}
+
+.card-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-body {
+  position: relative;
+  padding: 10px;
+  color: #fff;
+}
+
+.card-body > h1, h2,
+h3, h4, h5, p {
+  margin: 5px 0;
+}
+
+.alive,
+.dead,
+.unknown,
+.badge-top {
+  position: absolute;
+  padding: 0 10px;
+  border-radius: 5px;
+  transition: .2s;
+  font-size: 700;
+}
+
+.alive:hover,
+.dead:hover,
+.unknown:hover,
+.badge-top:hover {
+  transition: .2s;
+  cursor: pointer;
+  color: #1f1f1f;
+}
+
+.badge-top {
+  top: 10px;
+  left: 10px;
+  color: #6847d4;
+  border: 1px solid #6847d4;
+  max-width: 60px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.badge-top:hover {
+  max-width: 100%;
+  background-color: #6847d4;
+  color: #fff;
+}
+
+.alive {
+  border: 1px solid #81ff28;
+  bottom: 10px;
+  right: 5px;
+  color: #81ff28;
+}
+
+.alive:hover {
+  background-color: #81ff28;
+  color: #1f1f1f;
+}
+
+.dead {
+  border: 1px solid #f8261f;
+  bottom: 10px;
+  right: 5px;
+  color: #f8261f;
+}
+
+.dead:hover {
+  background-color: #f8261f;
+  color: #1f1f1f;
+}
+
+.unknown {
+  border: 1px solid #28a5ff;
+  bottom: 10px;
+  right: 5px;
+  color: #28a5ff;
+}
+
+.unknown:hover {
+  background-color: #28a5ff;
+}
+
+
+
+#cards-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 10px;
+  padding-top: 30px;
+}
+
+@media only screen and (min-width: 1100px) {
+  .container {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

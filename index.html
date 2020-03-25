@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <section class="parallax" style="background-image: url('./img/banner.jpg');">
+    <div class="container">
+      <h1 class="title">Rick And Morty With API</h1>
+      <p>Los personajes de Rick & Morty llamadas por medio de Async/Await.
+      </p>
+      <p>Se renderizaran todos los personaje de esta extraordinaria serie animada,</br>
+        dando a conocer los estados de estos.</p>
+    </div>
+  </section>
+
+  <section id="cards-content" class="container"></section>
+
+  <script src="./js/utils/fetchData.js"></script>
+  <script src="./js/utils/cardGenerator.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
