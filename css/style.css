@@ -67,8 +67,6 @@ body::-webkit-scrollbar-thumb {
 
 .card-image {
   position: relative;
-  height: 200px;
-  overflow: hidden;
 }
 
 .card-body {
