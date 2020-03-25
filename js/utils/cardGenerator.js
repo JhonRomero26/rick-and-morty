@@ -4,7 +4,7 @@ const cardGenerator = object => {
 
   card.innerHTML = `
   <div class="card-image">
-    <img class="img-fluid" src="${object.image}" alt="Rick and Morty">
+    <img class="img-fluid" src="${object.image}" alt="imagen de ${object.name}">
     <span class="badge-top">${object.origin.name}</span>
   </div>
   <div class="card-body">

@@ -1,7 +1,7 @@
 html,
 body {
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   background-color: #1f1f1f;
 }
@@ -29,8 +29,27 @@ body::-webkit-scrollbar-thumb {
   height: auto;
 }
 
+.social-networks {
+  padding: 10px 0;
+  font-size: 1.6em;
+}
+
+.social-networks > a {
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  background-color: #282828;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.social-networks > a + a {
+  margin-left: 5px;
+}
+
 .parallax {
-  font-size: 1rem;
+  font-size: 1.2rem;
   background-position: 50% 100%;
   background-size: cover;
   background-attachment: fixed;
@@ -38,15 +57,6 @@ body::-webkit-scrollbar-thumb {
   padding: 100px 0;
   position: relative;
   color: #fff;
-}
-
-.paralax::after {
-  content: "Hola";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(#000, 0.25);
-  z-index: 1;
 }
 
 .card {
@@ -97,7 +107,7 @@ h3, h4, h5, p {
   left: 10px;
   color: #6847d4;
   border: 1px solid #6847d4;
-  max-width: 60px;
+  max-width: 65px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
