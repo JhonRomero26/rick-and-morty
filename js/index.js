@@ -1,6 +1,3 @@
-// import { fetchData } from "./utils/fetchData.js";
-// import { cardGenerator } from "./utils/cardGenerator.js";
-
 // const fetchData = require('./utils/fetchData');
 // const cardGenerator = require('./utils/cardGenerator');
 
