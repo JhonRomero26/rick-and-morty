@@ -1,6 +1,3 @@
-// const fetchData = require('./utils/fetchData');
-// const cardGenerator = require('./utils/cardGenerator');
-
 const cardsContent = document.getElementById('cards-content');
 
 const API = 'https://rickandmortyapi.com/api/character/';
