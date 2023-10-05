@@ -42,8 +42,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - run: pnpm install
-      - run: pnpm run build
+      - name: Install dependencies
+        working-directory: .
+        run: pnpm install
+
+      - name: Build pages
+        working-directory: .
+        run: pnpm run build
 
       - name: Setup Pages
         id: pages
@@ -52,7 +57,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: "./dist"
+          path: ./dist
 
   deploy:
     needs: build
@@ -61,7 +66,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v3
       - name: Deploy to GitHub Pages
-        id: deployment
+        id: main
         uses: actions/deploy-pages@v2
