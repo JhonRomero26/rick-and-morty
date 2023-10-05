@@ -1,38 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./public/rick.ico" type="image/x-icon" />
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/variables.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/rick.ico"" type="image/x-icon">
-  <title>Rick and Morty</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-</head>
-
-<body>
-
-  <section class="parallax" style="background-image: url('./img/banner.jpg');">
-    <div class="container">
-      <h1 class="title">Rick And Morty With API</h1>
-      <p class="text-dark">Los personajes de Rick & Morty llamadas por medio de Async/Await.
-      </p>
-      <p class="text-dark">Se renderizaran todos los personaje de esta extraordinaria serie animada,</br>
-        dando a conocer los estados de estos.</p>
-      <div class="social-networks">
-        <a target="_blank" href="https://www.facebook.com/JhonRomero26"><i class="fab fa-facebook-f"></i></a>
-        <a target="_blank" href="https://www.instagram.com/romero__jhon/"><i class="fab fa-instagram"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/romero-jhon/"><i class="fab fa-linkedin-in"></i></a>
-        <a target="_blank" href="https://twitter.com/JRomeroGonzaga"><i class="fab fa-twitter"></i></a>
+  <body>
+    <section
+      class="parallax"
+      style="background-image: url('./public/banner.jpg')"
+    >
+      <div class="hero-content">
+        <h1 class="hero-title">
+          API & Infinty<br />
+          Scroll con Rick Y Morty
+        </h1>
+        <div class="hero-description">
+          <p class="text-dark">
+            Los personajes de Rick & Morty llamadas por medio de Async/Await.
+          </p>
+          <p class="text-dark">
+            Se renderizaran todos los personaje de esta extraordinaria serie
+            animada, dando a conocer los estados de estos.
+          </p>
+        </div>
+        <div class="social-networks">
+          <a target="_blank" href="https://github.com/JhonRomero26"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a target="_blank" href="https://instagram.com/romero__jhon/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a target="_blank" href="https://linkedin.com/in/romero-jhon/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a target="_blank" href="https://twitter.com/JRomeroGonzaga"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="cards-content" class="container"></section>
+    <section>
+      <div id="cards-content" class="container"></div>
+      <div id="content-infinte-reference"></div>
+    </section>
 
-  <script src="./js/utils/fetchData.js"></script>
-  <script src="./js/utils/cardGenerator.js"></script>
-  <script src="./js/index.js"></script>
-</body>
-
+    <!-- <script src="./js/utils/fetchData.js"></script> -->
+    <!-- <script src="./js/utils/cardGenerator.js"></script> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+    ></script>
+    <script defer type="module" src="./src/index.js"></script>
+  </body>
 </html>

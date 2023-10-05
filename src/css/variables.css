@@ -1,0 +1,16 @@
+:root {
+    --purple: #6847d4;
+    --green: #81ff28;
+    --red: #eb5a55;
+    --blue: #28a5ff;
+}
+
+:root {
+    --bg: #1f1f1f;
+    --ui-01: #282828;
+}
+
+:root {
+    --text-primary: #fff;
+    --text-inverted: #1f1f1f;
+}
