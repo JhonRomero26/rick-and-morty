@@ -1,6 +1,15 @@
 import { defineConfig } from "vite";
 
-export default defineConfig({
-  base: "/rick-and-morty/",
-  publicDir: "public",
+export default defineConfig(({ mode }) => {
+  if (mode === "production") {
+    return {
+      base: "/rick-and-morty/",
+      publicDir: "public",
+    };
+  }
+
+  return {
+    base: "/",
+    publicDir: "public",
+  };
 });
