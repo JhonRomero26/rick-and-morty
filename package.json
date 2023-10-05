@@ -1,0 +1,19 @@
+{
+  "name": "rick-and-morty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "10.4.16",
+    "cssnano": "6.0.1",
+    "postcss": "8.4.31",
+    "vite": "4.4.10"
+  }
+}
