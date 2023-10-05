@@ -15,6 +15,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
+        working-directory: .
 
       - uses: pnpm/action-setup@v2
         name: Install pnpm
@@ -38,6 +39,11 @@ jobs:
       - run: pnpm install
       - run: pnpm run build
 
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: "./dist"
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -53,15 +59,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v3
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: "./dist"
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
