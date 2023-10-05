@@ -4,7 +4,14 @@ on:
   push:
     branches:
       - main
-  pull_request:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -15,7 +22,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-          working-directory: .
 
       - uses: pnpm/action-setup@v2
         name: Install pnpm
@@ -47,13 +53,6 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    concurrency:
-      group: "pages"
-      cancel-in-progress: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
